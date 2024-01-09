@@ -5,4 +5,9 @@ echo "Hello World";
 echo "\n";
 echo $a + $b;
 echo "probando";
+while ($b <= 10)
+{   
+$b ++;
+} 
+echo "The value of b is: $b\n";
 ?>
