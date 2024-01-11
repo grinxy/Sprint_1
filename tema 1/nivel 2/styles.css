@@ -45,8 +45,15 @@ header {
             flex-flow:row nowrap;
             flex: 2 1 auto;
         }
-        .box-social-media ul i{
+        .box-social-media ul li{
+            padding: 5px;
+            display: inline-flex; 
+            list-style: none;
+            text-decoration: none;
+        }
+        .box-social-media ul li i{
             padding: 10px;
+        
         }
     .box-2{
         display: flex;
