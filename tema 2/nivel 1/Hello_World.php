@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-//EJERCICIO 1
+//EJERECICIO 1
+echo "***EJERCICIO 1: <br/><br/>";
 $numUser = 20;
 $height = 1.75;
 $name = "Peter";
@@ -11,9 +12,10 @@ $approved = true;
 echo $numUser . "<br/>" . $height . "<br/>" . $name . "<br/>" . $approved;
 
 define("MY_NAME", "Monica");
-echo "<h1>" . MY_NAME . "</h1>";
+echo "<h1>" . MY_NAME . "</h1><br/>";
 
-// EJERCICIO 2
+//EJERECICIO 2
+echo "<br/>***EJERCICIO 2: <br/><br/>";
 $salutation = "Hello, World!";
 
 echo $salutation . "<br/>";
@@ -26,7 +28,8 @@ $course = "This is the PHP course";
 echo $salutation . " " . $course . ".<br/><br/>";
 
 
-//EJERCICIO 3
+//EJERECICIO 3
+echo "<br/>***EJERCICIO 3: <br/><br/>";
 
 $x = 2;
 $y = 5;
@@ -94,7 +97,8 @@ function calculator(int $num1, int $num2, string $operator): string
 }
 
 //EJERCICIO 4  
-echo "<br/>";
+echo "<br/>***EJERCICIO 4: <br/><br/>";
+
 $numMax = 25;
 $multiple = 3;
 
@@ -113,7 +117,7 @@ function countTo(int $multiple, int $numMax = 10): string
 }
 
 //EJERCICIO 5
-echo "<br/>";
+echo "<br/>***EJERCICIO 5: <br/><br/>";
 
 $nota1 = 5.6;
 $nota2 = 2.8;
@@ -144,7 +148,7 @@ return $output;
 } 
 
 //EJERCICIO 6
-echo "<br/>";
+echo "<br/>***EJERCICIO 6: <br/><br/>";
 
 if (isBitten()){
     echo "Charlie bit my finger.<br/>";
