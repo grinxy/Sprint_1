@@ -17,9 +17,7 @@ class Employee
     private $name;
     private $salary;
 
-
-
-    public function initialize($name, $salary)
+    public function initialize($name, $salary) : void
     {
         $this->name = $name;
         $this->salary = $salary;
@@ -29,8 +27,6 @@ class Employee
     {
         $taxes = ($this->salary > 6000)? " has to pay taxes.":" does not have to pay taxes.";
         return "Employee $this->name $taxes";
-
-   
     }
 }
 
