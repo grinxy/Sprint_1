@@ -171,9 +171,9 @@ function grado($nota): string
 {
     if($nota >= 6.0){
         $output = "Primera División";
-    }else if(($nota >= 4.5) && ($nota <= 5.9)){
+    }else if(($nota >= 4.5){// && ($nota <= 5.9)){ Ya en el primer caso hemos quitado la probabilidad de que sea >=6.0 por lo que no es necesario repetir
         $output = "Segunda División";
-    }else if(($nota >= 3.3) && ($nota <= 4.4)){
+    }else if(($nota >= 3.3){ // && ($nota <= 4.4)){
         $output = "Tercera División";
     }else if($nota < 3.3){
         $output = "Reprobado";
