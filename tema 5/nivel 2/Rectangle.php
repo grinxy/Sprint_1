@@ -9,7 +9,7 @@ class Rectangle extends Shape implements Calculos
 
     public function calculateArea() : float
     {
-       return parent::getWidth() * parent::getHeight();
+       return $this->width * $this->height;
         
     }
 

@@ -6,8 +6,8 @@ declare(strict_types=1);
 abstract class Shape
 {
 
-    private $width;  
-    private $height;
+    protected $width;  
+    protected $height;
 
 
     public function __construct(int $width, int $height)
@@ -16,12 +16,12 @@ abstract class Shape
         $this->height = $height;
     }
 
-    public function getWidth()
+    public function getWidth() : int
     {
         return $this->width;
     }
 
-    public function getHeight()
+    public function getHeight() : int
     {
         return $this->height;
     }
