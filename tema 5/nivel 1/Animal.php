@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Animal
+abstract class Animal
 {
     private $name;
 
@@ -11,7 +11,7 @@ class Animal
         $this->name = $name;
     }
 
-    public function getName()
+    public function getName() : string
     {
         return $this->name;
     }
