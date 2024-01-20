@@ -8,20 +8,16 @@ Crea també el mètode shapeName, que digui quina és la figura que ha sortit en
 Realitza una aplicació que permeti tirar cinc daus de pòquer alhora.
 A més, programa el mètode getTotalThrows que ha de mostrar el nombre total de tirades entre tots els daus.*/
 
-$dice_1 = new PokerDice();
-$dice_2 = new PokerDice();
-$dice_3 = new PokerDice();
-$dice_4 = new PokerDice();
-$dice_5 = new PokerDice();
-
-$allDices = [$dice_1, $dice_2, $dice_3, $dice_4, $dice_5];
+for ($i = 0; $i < 5; $i++)
+{
+   $allDices[] = new PokerDice();
+}
 
 //Testing the code:
 echo "Throw 1: <br/>" . throwDices($allDices) . "<br/>";
 echo "Throw 2: <br/>" . throwDices($allDices) . "<br/>";
 
-
-echo "The total number of throws of all the dice : " . getTotalThrows($allDices);
+echo "The total number of throws of all the dice : " . PokerDice::diceTotalThrows();
 
 
 function throwDices(array $allDices) : string
@@ -35,14 +31,5 @@ function throwDices(array $allDices) : string
    return $output;
 }
 
-function getTotalThrows(array $allDices): int
-{
-   $result = 0;
-
-   foreach ($allDices as $dice) {
-      $result += $dice->diceTotalThrows();
-   }
-   return $result;
-}
 
 ?>

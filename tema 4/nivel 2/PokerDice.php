@@ -5,21 +5,21 @@ declare(strict_types=1);
 
 class PokerDice
 {
-    private $diceFaces = ["As", "K", "Q", "J", "7", "8"];
+    private const DICE_FACES = ["As", "K", "Q", "J", "7", "8"];   //constante no variable. Todos los dados tienen los mismos lados SIEMPRE.
     private $lastThrow;
-    private $numThrow = 0;
+    private static $totalThrows = 0;   //static --> todas las instancias acceden y al pertenecer a la clase no a los objetos, mantiene su valor entre diferentes llamadas.
 
 
-    public function getFace(): array
+    public function getDiceFaces(): array
     {
-        return $this->diceFaces;
+        return self::DICE_FACES;
     }
 
     public function throw(): string
     {
-        $throw = $this->diceFaces[array_rand($this->diceFaces, 1)];
+        $throw = self::DICE_FACES[array_rand(self::DICE_FACES, 1)];
         $this->lastThrow = $throw;
-        $this->numThrow++;
+        self::$totalThrows++;
         return $throw;
     }
     public function shapeName(): string
@@ -27,8 +27,8 @@ class PokerDice
         return $this->lastThrow;
     }
 
-    public function diceTotalThrows(): int
+    public static function diceTotalThrows(): int    
     {
-        return $this->numThrow;
+        return static::$totalThrows;
     }
 }
