@@ -8,7 +8,7 @@ class Rectangle extends Shape
 
     public function calculateArea() : float
     {
-       return parent::getWidth() * parent::getHeight();
+       return $this->width * $this->height;
         
     }
 

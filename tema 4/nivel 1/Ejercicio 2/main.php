@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 //no "require Shape" (abstractas no se instancian!)
-include "Triangle.php";
-include "Rectangle.php";
+include_once "Triangle.php";
+include_once "Rectangle.php";
 
 $triangle_1 = new Triangle(5, 8);
 $rectangle_1 = new Rectangle(10, 3);

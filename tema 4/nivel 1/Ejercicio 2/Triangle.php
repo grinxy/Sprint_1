@@ -9,7 +9,7 @@ class Triangle extends Shape
     
     public function calculateArea() : float
     {
-       return (parent::getWidth() * parent::getHeight())/2;
+       return ($this->width * $this->height)/2;
         
     }
 

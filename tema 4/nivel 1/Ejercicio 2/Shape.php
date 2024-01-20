@@ -8,8 +8,8 @@ Defineix dues subclasses; Triangle i Rectangle que heretin de Shape i que calcul
 abstract class Shape
 {
 
-    private $width;  //si declaro como protected, las sublcases tb puedan acceder sin necesidad de getters e invocar al parent en variables --> mejor practica cual?
-    private $height;
+    protected $width;  
+    protected $height;
 
 
     public function __construct(int $width, int $height)
@@ -18,12 +18,12 @@ abstract class Shape
         $this->height = $height;
     }
 
-    public function getWidth()
+    public function getWidth() : int
     {
         return $this->width;
     }
 
-    public function getHeight()
+    public function getHeight() : int
     {
         return $this->height;
     }
