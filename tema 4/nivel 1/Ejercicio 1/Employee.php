@@ -17,14 +17,15 @@ class Employee
     private $name;
     private $salary;
 
-    public function initialize($name, $salary) : void
+    public function initialize(string $name, int $salary) : void
     {
         $this->name = $name;
         $this->salary = $salary;
     }
 
-    public function printEmployee() : string
+    public function taxesEmployee() : string
     {
+       
         $taxes = ($this->salary > 6000)? " has to pay taxes.":" does not have to pay taxes.";
         return "Employee $this->name $taxes";
     }
