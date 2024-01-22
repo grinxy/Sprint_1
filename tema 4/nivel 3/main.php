@@ -78,7 +78,7 @@ function searchCinema(string $cinemaName): ?Cinema  //?Cinema --> nullable type.
 function addMovie2Cinema(string $cinemaMovie, Movie $newMovie, array $cinemas): string
 {
     $cinema = searchCinema($cinemaMovie);
-    if ($cinema === null) {
+    if (!isset($cinema)) {
         $output = "Cinema not found. \n";
     } else {
         $cinema->addMovie($newMovie);
@@ -90,7 +90,7 @@ function addMovie2Cinema(string $cinemaMovie, Movie $newMovie, array $cinemas): 
 function showCinemaMovies(string $cinemaMovie): string
 {
     $cinema = searchCinema($cinemaMovie);
-    if ($cinema === null) {
+    if (!isset($cinema)) {
         $output = "Cinema not found. \n";
     } else {
         $output = $cinema->showMovieListInfo();
@@ -102,7 +102,7 @@ function showCinemaMovies(string $cinemaMovie): string
 function showLongestMovie(string $cinemaMovie): string
 {
     $cinema = searchCinema($cinemaMovie);
-    if ($cinema === null) {
+    if (!isset($cinema)) {                     
         $output = "Cinema not found. \n";
     } else {
         $output = $cinema->longestMovie();
