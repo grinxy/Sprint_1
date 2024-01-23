@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <h1>Candidate Information Form</h1>
+    <form action ="datos_formulario.php" method = "post">   <!--metodo get deja visibles datos en barra direccion navegador. Ojo datos sensibles-->
+    Name: <input type="text" id="name" name="name" placeholder="Name" required><br>  <!-- campo name e id mismos para consistencia-->
+    Surname: <input type ="text" id="surname" name="surname" placeholder="Surname" required><br>
+    Age: <input type ="number" id="age" name="age" placeholder="Age" required><br>
+    Email: <input type="text" id="email" name="email" placeholder="Email"><br>
+    <input type="submit" value="Send"><br>
+
+    </form>
+</body>
+</html>
