@@ -1,0 +1,25 @@
+{
+    "name": "monicaestebanponce/tema7_2",
+    "autoload": {
+        "psr-4": {
+            "Monicaestebanponce\\Tema7_2\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Monicaestebanponce\\tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "grinxy",
+            "email": "moespon@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

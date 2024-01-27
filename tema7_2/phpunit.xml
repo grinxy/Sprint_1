@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--vendor/autoload lo crea composer, es administrador de dependencias y carga automatico las clases del proyecto cuando sean necesarias -> no hace falta el require-->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    stopOnFailure="false"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+    cacheDirectory=".phpunit.cache"
+>
+
+  <!--stopOnFailure en true, detiene las pruebas al primer error. Puede ir bien para depurar. En false, nos da toda la info de todas las pruebas de una vez-->
+    <!--El xsi proporciona la ubicación del esquema de configuración que se utilizará para validar este archivo XML-->
+  <testsuites>
+    <testsuite name="PHP Tests">
+      <directory>tema7_2/tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
