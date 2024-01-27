@@ -9,6 +9,19 @@ use Monicaestebanponce\Tema7_1\gradesChecker;
 
 class gradesCheckerTest extends TestCase{
 
+    public function testValidGrade() : void
+    {
+        $validGradeChecker = new gradesChecker();
+
+        
+        $isNotValidGrade = $validGradeChecker->evaluateGrade(10.5);
+        $isValidGrade = $validGradeChecker->evaluateGrade(0.0);
+
+        $this->assertEquals("Invalid input", $isNotValidGrade);
+        $this->assertNotEquals("Invalid input", $isValidGrade);
+
+    }
+
     public function testsIsFirstDiv() : void
     {
         //arrange

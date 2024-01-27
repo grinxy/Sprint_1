@@ -6,9 +6,12 @@ class gradesChecker {
     public function __construct()
     {}
 
+    
     function evaluateGrade(float $grade): string
 {
-    if($grade >= 6.0){
+    if($grade < 0 || $grade > 10){
+        $output = "Invalid input";
+    }elseif($grade >= 6.0){
         $output = "First Division";
     }elseif($grade >= 4.5){
         $output = "Second Division";
