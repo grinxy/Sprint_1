@@ -12,7 +12,7 @@
     <!--El xsi proporciona la ubicación del esquema de configuración que se utilizará para validar este archivo XML-->
   <testsuites>
     <testsuite name="PHP Tests">
-      <directory>tema_7/nivel_1/tests</directory>
+      <directory>tema7_1/tests</directory>
     </testsuite>
   </testsuites>
 </phpunit>
