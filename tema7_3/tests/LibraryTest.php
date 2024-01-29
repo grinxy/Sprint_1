@@ -85,8 +85,7 @@ class LibraryTest extends TestCase{
         $library ->addBook($book3);
        
         $largeBooksList = $library->largeBooksList();
-        var_dump($largeBooksList);
-
+     
         $this->assertEquals(2,count($largeBooksList));
         
     }
