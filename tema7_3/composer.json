@@ -16,7 +16,7 @@
     ],
    
     "scripts": {
-        "test": "phpunit"
+        "tests": "phpunit"
     },
     "intelephense.environment.phpVersion": "8.1.0"
 }
